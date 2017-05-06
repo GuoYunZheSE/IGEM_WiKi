@@ -8,24 +8,30 @@
 
 	#nav{
 		position: relative;
-		background-color: #292929;   //导航栏背景颜色
+		background-color: #3498DB;   /*导航栏背景颜色#ED784A*/
 		border-radius:5px;
+		width: 1285px;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 100px;
 	}
 	.menu li{
 		/*渐变颜色*/
-		background: -moz-linear-gradient(#292929, #252525);
-		background: -ms-linear-gradient(#292929, #252525);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #292929), color-stop(100%, #252525));
-		background: -webkit-linear-gradient(#292929, #252525);
-		background: -o-linear-gradient(#292929, #252525);
+		background: -moz-linear-gradient(#3498DB, #252525);
+		background: -ms-linear-gradient(#3498DB, #252525);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3498DB), color-stop(100%, #252525));
+		background: -webkit-linear-gradient(#3498DB, #252525);
+		background: -o-linear-gradient(#3498DB, #252525);
 		/*滤镜实现IE中渐变颜色*/
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525');
-		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525')";
-		background: linear-gradient(#292929, #252525);    //改变li的颜色
-		border-bottom: 2px solid #181818;
-		border-top: 2px solid #303030;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3498DB', endColorstr='#252525');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#3498DB', endColorstr='#252525')";
+		background: linear-gradient(#3498DB, #ED784A);    /*改变li的颜色，且颜色渐变*/
+		/*border-bottom: 1px solid #181818;            
+		border-top: 1px solid #303030;   */        
 		min-width: 155px;
 		// min-height: 90px;
+		box-shadow: #666 0px 0px 10px;
 	}
 
 	.menu > li:nth-child(1){
@@ -39,16 +45,22 @@
 	}
 
 	.menu > li:first-child{
-		border-radius: 5px 0 0;
+		border-radius: 5px 0 0 5px;
+	}
+	.menu > li:last-child{
+		border-radius: 0 5px 5px 0;
+	}
+	.menu > li:first-child a{
+		padding: 0 10px;
 	}
 
 	.menu a{
 		border-left: 3px solid rgba(0,0,0,0);
-		color: #808080;
+		color: #272822;
 		display: block;
 		font-family: 'Lucida Console';
-		font-size: 20px;
-		// padding: 25px 25px;
+		font-size: 22px;
+		padding: 5px 10px;
 		height: 47px;
 		line-height: 25px;
 		text-decoration: none;
@@ -102,6 +114,8 @@
 		-o-transition: opacity .4s, -o-transform .5s;
 		transition: opacity .4s, transform .5s;
 		width: 155px;
+		border-bottom: 1px solid #181818;            
+		border-top: 1px solid #303030;  
 	}
 
 	.submenu li a {
